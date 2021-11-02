@@ -4,9 +4,6 @@
   "main": "index.js",
   "author": "Andrew Mead",
   "license": "MIT",
-  "engines": {
-    "node": "14.17.3"
-  },
   "scripts": {
     "build:dev": "webpack",
     "build:prod": "webpack -p --env production",
@@ -30,8 +27,7 @@
     "firebase": "4.2.0",
     "history": "4.7.2",
     "moment": "2.18.1",
-    "node-sass": "^4.14.1",
-    "normalize": "^0.3.1",
+    "node-sass": "4.5.3",
     "normalize.css": "7.0.0",
     "numeral": "2.0.6",
     "react": "15.6.1",
