@@ -3,8 +3,9 @@ import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import AppRouter, { history } from './routers/AppRouter';
 import configureStore from './store/configureStore';
-import { startSetExpenses } from './actions/expenses';
-import { login, logout} from './actions/auth'
+import LoadingPage from './components/LoadingPage';
+import { login } from './actions/auth';
+import { startSetExpenses } from './actions/expenses'
 
 import 'normalize.css';
 import './styles/styles.scss';
@@ -28,7 +29,7 @@ const renderApp = () => {
   }
 };
 
-ReactDOM.render(<p>Loading...</p>, document.getElementById('app'));
+ReactDOM.render(<LoadingPage />, document.getElementById('app'));
 
 
 
